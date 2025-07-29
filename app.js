@@ -67,7 +67,7 @@ app.get('/allproducts', async (req, res)=>{
 // cart
 
 app.post('/addtocart', (req, res)=>{
-
+    const userId = await userSchema.findById()
 })
 
 app.listen(3000, ()=>{
